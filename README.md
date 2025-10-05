@@ -2,42 +2,71 @@
 
 **Páginas de detalhes dinâmicas**
 
-Nessa etapa, vamos evoluir o trabalho anterior, acrescentando a página de detalhes, conforme o  projeto escolhido. Imagine que a página principal (home-page) mostre um visão dos vários itens que existem no seu site. Ao clicar em um item, você é direcionado pra a página de detalhes. A página de detalhe vai mostrar todas as informações sobre o item do seu projeto. seja esse item uma notícia, filme, receita, lugar turístico ou evento.
+Nessa etapa, vamos evoluir o trabalho anterior, acrescentando a página de detalhes, conforme o projeto escolhido.  
+A página principal (home-page) mostra uma visão dos vários itens existentes no site.  
+Ao clicar em um item, o usuário é direcionado para a página de detalhes, que exibe todas as informações sobre o artista e seu álbum.
 
-Leia o enunciado completo no Canvas. 
-
-**IMPORTANTE:** Assim como informado anteriormente, capriche na etapa pois você vai precisar dessa parte para as próximas semanas. 
-
-**IMPORTANTE:** Você deve trabalhar e alterar apenas arquivos dentro da pasta **`public`,** mantendo os arquivos **`index.html`**, **`styles.css`** e **`app.js`** com estes nomes, conforme enunciado. Deixe todos os demais arquivos e pastas desse repositório inalterados. **PRESTE MUITA ATENÇÃO NISSO.**
+---
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- **Nome:** Pedro Henrique Pinho Silva
+- **Matrícula:** [900763]  
+- **Proposta de projeto escolhida:** Site de Artistas e Álbuns Musicais  
+- **Breve descrição sobre seu projeto:**  
+  O projeto exibe uma lista de artistas e seus álbuns, com uma página inicial dinâmica que apresenta os artistas em destaque.  
+  Ao clicar em "Ver detalhes", o usuário acessa uma página específica com informações completas do artista, como nome, álbum, gênero e descrição.
+
+---
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Home Page](./fotos/home-page.png)  
+*(Print: “Home page.PNG” enviado pelo autor)*
+
+---
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Página de Detalhes](./fotos/detalhes-page.png)  
+*(Print: “js detalhes.PNG” enviado pelo autor)*
+
+---
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
+const artistas = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
-  }
-]
-```
+    id: 1,
+    nome: "MC Ig",
+    imagem: "fotos/mcig.png",
+    descricao: "MC Ig é um dos principais nomes do trap/funk brasileiro, conhecido por suas letras autênticas e batidas marcantes.",
+    album: "Favelado Chique (2024)",
+    genero: "Trap / Funk",
+  },
+  {
+    id: 2,
+    nome: "Henrique e Juliano",
+    imagem: "fotos/henriqueejuliano.jfif",
+    descricao: "Dupla sertaneja consagrada, com músicas românticas e shows que arrastam multidões em todo o Brasil.",
+    album: "Manifesto Musical (2023)",
+    genero: "Sertanejo",
+  },
+  {
+    id: 3,
+    nome: "Artista 1",
+    imagem: "fotos/artista1.png",
+    descricao: "Novo talento da cena pop nacional, misturando ritmos modernos e letras inspiradoras.",
+    album: "Céu Aberto (2025)",
+    genero: "Pop",
+  },
+  {
+    id: 4,
+    nome: "Artista 2",
+    imagem: "fotos/artista2.png",
+    descricao: "Artista independente que combina sonoridades urbanas com influências eletrônicas.",
+    album: "Eclipse (2024)",
+    genero: "Indie / Eletrônico",
+  },
+];
